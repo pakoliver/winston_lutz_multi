@@ -6,7 +6,7 @@
 
 The following files related to our multi-target Winston-Lutz (MTWL) software are available in the repository: 
 
-- **`MTWL_phantom.STL`**: describes the design of the 3D-printed phantom
+- **`MTWL_phantom.stl`**: describes the design of the 3D-printed phantom
 - **`winston_lutz_multi.py`**: The main analysis script, which contains functions for generating MLC positions, detecting BBs and field apertures in MV images, creating image analysis figures and printing numerical results. These features are explained in detail in our manuscript.
 - **`__init__.py`**: Python initialization file modified to include our new software. The user must replace Pylinac’s original `__init__.py` with this modified version in order for the software to work properly.
 - **`example_input_file.py`**: Example input file showing how to use our software. Includes descriptions of user-definable parameters and their default values.
