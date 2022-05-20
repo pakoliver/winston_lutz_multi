@@ -13,7 +13,7 @@
 - Bed Temperature: 110 Celsius
 - Fan speed target: 10% (fan speed is kept low to prevent lifting/contraction/warping of the HIPS)
 - The print requires an enclosed printer where the internal temperature can be regulated
-- The z-axis is programmed to move down -0.01 cm after bed leveling to provide some clearance between the filament and nozzle. 
+- The z-axis is programmed to move down -0.01 mm after bed leveling to provide some clearance between the filament and nozzle. 
 - A brim was added to increase the surface area touching the glass plate, and to prevent lifting or contraction of the HIPS. 
 - Print time: approximately 5 hours
 - If the BBs do not easily slide to the bottom of the vertical cylindrical channels, manually drill out the channels to widen them slightly. A small amount of glue can be used to ensure the BBs do not move. After the BBs are in place, use a drill to completely remove the channel walls to avoid having image artefacts when the beam is directed along the channel axis. 
