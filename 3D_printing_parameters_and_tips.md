@@ -12,7 +12,7 @@
 - Print Temperature: 240 Celsius
 - Bed Temperature: 110 Celsius
 - Fan speed target: 10% (fan speed is kept low to prevent lifting/contraction/warping of the HIPS)
-- The print does require an enclosed printer where the internal temperature can be regulated
+- The print requires an enclosed printer where the internal temperature can be regulated
 - The z-axis is programmed to move down -0.01 cm after bed leveling to provide some clearance between the filament and nozzle. 
 - A brim was added to increase the surface area touching the glass plate, and to prevent lifting or contraction of the HIPS. 
 - Print time: approximately 5 hours
