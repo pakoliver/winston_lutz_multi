@@ -3,7 +3,7 @@
 ###### May 7, 2022
 ###### PAK Oliver, TR Wood and LN Baldwin
 
-
+### Description of files in this repository
 The following files related to our multi-target Winston-Lutz (MTWL) software are available in the repository: 
 
 - **`MTWL_phantom.stl`**: describes the design of the 3D-printed phantom
