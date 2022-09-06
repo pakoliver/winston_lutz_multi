@@ -27,6 +27,7 @@ WinstonLutz_multi.output_MLC_positions('example_BBs_file.txt', 'example_WLparams
 
 
 #### define directory where MV EPID images reside:
+## The file specifying the BB positions and the file specifying the WL parameters should also be in this directory!
 my_directory = '/path/to/directory/with/MV/EPID/images/'
 ## or use a zipped directory:
 # my_zip = '/path/to/directory.zip'
