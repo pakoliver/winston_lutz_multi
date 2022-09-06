@@ -39,4 +39,5 @@ The following two scripts are related to the generation of synthetic data used f
 
 ***Disclaimer: The authors of this work are not liable for incorrect output, either due to incorrect data input or errors in our algorithm. Users of the software should validate results against some other method.***
 
-Our published paper describes the software in detail and is available here: [url for journal website goes here]
+Our published paper describes the software in detail and is available here: https://doi.org/10.1088/2057-1976/ac8e72
+
