@@ -49,9 +49,9 @@ import pydicom
 from .core import image
 from .core.geometry import Point, Line, Vector, cos, sin
 from .core.io import TemporaryZipDirectory, get_url, retrieve_demo_file, is_dicom_image
-from .core.mask import filled_area_ratio, bounding_box
+from .core.mask import bounding_box
 from .core import pdf
-from .core.utilities import is_close, open_path
+from .core.utilities import is_close
 
 GANTRY = 'Gantry'
 COLLIMATOR = 'Collimator'
