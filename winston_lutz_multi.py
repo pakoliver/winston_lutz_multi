@@ -379,12 +379,12 @@ class ImageManager_multi(list):
                 Npix = FS * 10. * img_tmp.dpmm
                 if ((BB.x, BB.y, BB.z)) == ((0,0,0)):
                     Npix = Npix * (1. + (self.extra_buffer/100.)) # extra buffer for search area
-                    xstart = int(np.round(img_tmp.shape[0]/2. - Npix/2.))
-                    xstop  = int(np.round(img_tmp.shape[0]/2. + Npix/2.))
+                    xstart = int(np.round(img_tmp.shape[1]/2. - Npix/2.))
+                    xstop  = int(np.round(img_tmp.shape[1]/2. + Npix/2.))
                     ## Make y dim diff from x to ensure not mixing up axes in upsampling/interpolation:
                     ## https://github.com/scipy/scipy/issues/3164
-                    ystart = int(np.round(img_tmp.shape[1]/2. - Npix/2.)) - 1
-                    ystop  = int(np.round(img_tmp.shape[1]/2. + Npix/2.)) + 1
+                    ystart = int(np.round(img_tmp.shape[0]/2. - Npix/2.)) - 1
+                    ystop  = int(np.round(img_tmp.shape[0]/2. + Npix/2.)) + 1
                     BB1_ROI_midx = (xstop - xstart)/2.
                     BB1_ROI_midy = (ystop - ystart)/2.
                 else:
@@ -404,8 +404,8 @@ class ImageManager_multi(list):
                 img = WLImage_multi(file, myROI, offset, Fmag, BB_r_mm, **kwargs)
                 if ((BB.x, BB.y, BB.z)) == ((0,0,0)):
                     # use img_tmp in the following because this hasn't been trimmed:
-                    x_origin = (img_tmp.shape[0]/2.) + (img.field_cax.x / self.upsamp_factor) - BB1_ROI_midx
-                    y_origin = ((img_tmp.shape[1]/2.) + (img.field_cax.y / self.upsamp_factor) - 
+                    x_origin = (img_tmp.shape[1]/2.) + (img.field_cax.x / self.upsamp_factor) - BB1_ROI_midx
+                    y_origin = ((img_tmp.shape[0]/2.) + (img.field_cax.y / self.upsamp_factor) - 
                                 (offset * 10. * img_tmp.dpmm) - BB1_ROI_midy)
                                 # ^ offset for 000 BB should be zero anyway...
                 img_list.append(img)
