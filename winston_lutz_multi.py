@@ -245,8 +245,13 @@ def _get_MLC_aperture(this_BB: Vector, param: WLparam_Vector, SAD_cm: float):
         if BB.z > MLC[tmp]:
             if MLC_widths[tmp-2] == sm_leaf:  # check that the prev, prev leaf is small
                 leaves = leaves + [tmp-2]     # the prev, prev small leaf
-        else:  # use the small leaf in the other direction:
-            leaves = leaves + [tmp+2]         # the next, next small leaf
+            else:  # use the small leaf in the other direction:
+                leaves = leaves + [tmp+2]         # the next, next small leaf
+        else:
+            if MLC_widths[tmp+2] == sm_leaf:  # check that the next, next leaf is small
+                leaves = leaves + [tmp+2]     # the next, next small leaf
+            else:  # use the small leaf in the other direction:
+                leaves = leaves + [tmp-2]         # the prev, prev small leaf
     # if in large leaf but at boundary of large and small leaves:
     elif ((MLC_widths[tmp] == lg_leaf) and (MLC_widths[tmp-1] == sm_leaf)):
         if BB.z > MLC[tmp]:  # if closer to the small leaves:
